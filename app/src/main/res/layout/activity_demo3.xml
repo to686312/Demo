@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/demo3_click"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="写缓存"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/demo3_read"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="读缓存"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/demo3_remove"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="移除缓存"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/demo3_delete"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="删除缓存"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/demo3_size"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="缓存大小"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+</LinearLayout>

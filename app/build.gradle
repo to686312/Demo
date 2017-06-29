@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'realm-android'
+//apply plugin: 'com.tencent.tinker.patch'
+
+//apply plugin: 'com.tencent.bugly.tinker-support'
+
+//tinkerSupport {
+//    enable = true
+//}
+//// 全局信息相关配置项
+//tinkerPatch {
+//    oldApk = "YOUR_OLD_APK" //打补丁包时必选， 基准包路径
+//
+//    ignoreWarning = false // 可选，默认false
+//
+//    useSign = true // 可选，默认true， 验证基准apk和patch签名是否一致
+//
+//    // 编译相关配置项
+//    buildConfig {
+//        applyMapping = "YOUR_OLD_APK_PROGUARD_FILE" //  可选，设置mapping文件，建议保持旧apk的proguard混淆方式
+//        applyResourceMapping = "YOUR_OLD_APK_RES_MAPPING"  // 可选，设置R.txt文件，通过旧apk文件保持ResId的分配
+//        tinkerId = "YOUR_TINKER_ID"  // 必选，当前版本的唯一标识，可以是git版本号、versionName
+//    }
+//
+//    // dex相关配置项
+//    dex {
+//        dexMode = "jar" // 可选，默认为jar
+//        usePreGeneratedPatchDex = false // 可选，默认为false
+//        pattern = ["classes*.dex",
+//                   "assets/secondary-dex-?.jar"]
+//        loader = ["com.tencent.tinker.loader.*",  // 必选
+//                  "xxxx.SampleApplication",
+//        ]
+//    }
+//
+//    // lib相关的配置项
+//    lib {
+//        pattern = ["lib/armeabi/*.so"]
+//    }
+//
+//    // res相关的配置项
+//    res {
+//        pattern = ["res/*", "assets/*", "resources.arsc", "AndroidManifest.xml"]
+//        ignoreChange = ["assets/sample_meta.txt"]
+//        largeModSize = 100
+//    }
+//
+//    // 用于生成补丁包中的'package_meta.txt'文件
+//    packageConfig {
+//        configField("patchMessage", "tinker is sample to use")
+//
+//        configField("platform", "all")
+//
+//        configField("patchVersion", "1.0")
+//    }
+//
+//    // 7zip路径配置项，执行前提是useSign为true
+//    sevenZip {
+//        zipArtifact = "com.tencent.mm:SevenZip:1.1.10" // optional
+//        //  path = "/usr/local/bin/7za" // optional
+//    }
+//}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.example.shinelon.demo"
+        minSdkVersion 23
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jni/'] } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.zhy:okhttputils:2.6.2'
+    //
+    //    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    //    compile 'com.github.franmontiel:PersistentCookieJar:v0.9.3'
+    //    //optional, help to generate the final application
+    //    provided('com.tencent.tinker:tinker-android-anno:1.7.5')
+    //    //tinker's main Android lib
+    //    compile('com.tencent.tinker:tinker-android-lib:1.7.5')
+    // 多dex配置
+    //    compile "com.android.support:multidex:1.0.1"
+    //    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    ////其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    //
+    //    compile "com.android.support:multidex:1.0.1"
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+}

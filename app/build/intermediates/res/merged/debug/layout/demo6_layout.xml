@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/Base.Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:id="@+id/request"
+        android:layout_height="60dp"
+        android:text="请求" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+
+</LinearLayout>

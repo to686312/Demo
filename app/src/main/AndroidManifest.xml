@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.shinelon.demo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!--
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_LOGS" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <!--android:name=".demo5.SampleApplication"-->
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo1.demo1Activity"/>
+        <activity
+            android:name=".demo2.Demo2Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".demo3.Demo3Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".demo4.Demo4Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".demo5.Demo5Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".demo6.Demo6Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+
+        <activity
+            android:name=".demo7.Demo7Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name=".demo8.demo8Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <!--   &lt;!&ndash;注意：如果你也想使用升级功能，你必须要进行2、3项的配置，而如果你只想使用热更新能力，你只需要配置权限即可。&ndash;&gt;
+           <activity
+               android:name="com.tencent.bugly.beta.ui.BetaActivity"
+               android:theme="@android:style/Theme.Translucent" />
+
+
+           <provider
+               android:name="android.support.v4.content.FileProvider"
+               android:authorities="com.example.shinelon.demo.fileProvider"
+               android:exported="false"
+               android:grantUriPermissions="true">
+               <meta-data
+                   android:name="android.support.FILE_PROVIDER_PATHS"
+                   android:resource="@xml/provider_paths"/>
+           </provider>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_demo2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shinelon.demo.demo2.Demo2Activity">
+
+    <!--<com.example.shinelon.demo.demo2.test1View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
+    <!--
+        <com.example.shinelon.demo.demo2.SelfImageView
+            android:layout_width="match_parent"
+            android:scaleType="matrix"
+            android:layout_height="match_parent" />-->
+    <!-- <com.example.shinelon.demo.demo2.test2View
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+
+    <!--  <com.example.shinelon.demo.demo2.waterWaveView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />-->
+    <!-- <com.example.shinelon.demo.demo2.SignView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+
+    <!-- <com.example.shinelon.demo.demo2.NextPagerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+
+    <!--   <com.example.shinelon.demo.demo2.FoldView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />-->
+  <!--  <com.example.shinelon.demo.demo2.AlarmView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/item_click"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/item_imgae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alarm_info_left" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alarm_info_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_alarm_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alarm_info_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="安立路-首经贸"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="到站提醒:宋家庄 首经贸"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </com.example.shinelon.demo.demo2.AlarmView>-->
+
+<!--
+    <android.support.v4.widget.SlidingPaneLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.widget.SlidingPaneLayout>-->
+
+    <com.example.shinelon.demo.demo2.Xrecyclerview
+        android:id="@+id/xrecyclerview"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

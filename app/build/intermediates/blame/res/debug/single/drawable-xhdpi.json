@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\project\\Demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\alarm_info_left.png",
+        "source": "D:\\project\\Demo\\app\\src\\main\\res\\drawable-xhdpi\\alarm_info_left.png"
+    },
+    {
+        "merged": "D:\\project\\Demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\demo1.png",
+        "source": "D:\\project\\Demo\\app\\src\\main\\res\\drawable-xhdpi\\demo1.png"
+    },
+    {
+        "merged": "D:\\project\\Demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\photo1.png",
+        "source": "D:\\project\\Demo\\app\\src\\main\\res\\drawable-xhdpi\\photo1.png"
+    },
+    {
+        "merged": "D:\\project\\Demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_pictures_photo.png",
+        "source": "D:\\project\\Demo\\app\\src\\main\\res\\drawable-xhdpi\\add_pictures_photo.png"
+    },
+    {
+        "merged": "D:\\project\\Demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\alarm_info_middle.png",
+        "source": "D:\\project\\Demo\\app\\src\\main\\res\\drawable-xhdpi\\alarm_info_middle.png"
+    },
+    {
+        "merged": "D:\\project\\Demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\alarm_info_right.png",
+        "source": "D:\\project\\Demo\\app\\src\\main\\res\\drawable-xhdpi\\alarm_info_right.png"
+    }
+]
